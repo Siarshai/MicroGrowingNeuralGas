@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 import matplotlib.animation as animation
 import matplotlib.lines as mlines
 
-def render_scatter_gng(X, weights, connections, title="GNG", show=True):
+def render_scatter_gng(weights, X, connections, title="GNG", show=True):
     fig, ax = plt.subplots(figsize=[12.0, 8.0])
     ax.annotate(title, (0.02, 0.95), textcoords='axes fraction', color='midnightblue')
     ax.scatter(X[:, 0], X[:, 1], color='midnightblue', s=8)
